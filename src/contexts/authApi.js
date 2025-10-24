@@ -2,9 +2,9 @@ import axios from "axios";
 // import Swal from "sweetalert2";
 // http://192.168.29.83:8000/api/web-login
 const api=axios.create({
-   //  baseURL:'http://192.168.29.83:8000/api',
+    // baseURL:'http://192.168.29.83:8000/api',
     // baseURL:'https://demoapi.spasoftware.online/public/api',
-    baseURL:'http://127.0.0.1:8004/api',
+    baseURL:'http://127.0.0.1:8002/api',
     // baseURL:'https://api.nearbydoctors.in/public/api',
      headers: {
         //  "Content-Type": "application/json",

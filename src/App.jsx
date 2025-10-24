@@ -4,6 +4,7 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { DataProvider } from './contexts/DataContext';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar1';
 
 import Login from './pages/Login';
 import RazorpayPayment from './pages/RazorpayPayment';
@@ -14,6 +15,7 @@ import ProductManagement from './pages/ProductManagement';
 import CategoryManagement from './pages/CategoryManagement';
 import BranchManagement from './pages/BranchManagement';
 import Reports from './pages/Reports';
+import Reports1 from './pages/DailySalesReport';
 import POS from './pages/POS';
 import POS_ADV from './pages/POS_ADV';
 import StaffManagement from './pages/StaffManagement';
@@ -29,7 +31,10 @@ import StaffStatsBranch from './pages/StaffStatsBranch';
 import AppointmentsFull from './pages/AppointmentsFull';
 import MembershipPurchase from './pages/MembershipPurchase';
 import MembershipDetails from './pages/MembershipDetails';
+import ForgotPassword from './pages/ForgotPassword';
+import Profile from './pages/Profile';
 import Calender from './pages/Calender';
+import SiteSettings from './pages/SiteSettings';
 
 function App() {
   return (
@@ -63,6 +68,10 @@ const MainContent = () => {
         <Route path="/RazorpayPayment" element={<RazorpayPayment />} />
         <Route path="/" element={<Navigate to="/login" replace />} />
               <Route path="/calender" element={<Calender />} />
+              <Route path="/Reports1" element={<Reports1 />} />
+              <Route path="/Profile" element={<Profile />} />
+              <Route path="/ForgotPassword" element={<ForgotPassword />} />
+              <Route path="/SiteSettings" element={<SiteSettings />} />
 
         {/* Admin Routes */}
         <Route
